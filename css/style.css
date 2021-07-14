@@ -16,11 +16,6 @@ body {
   /* Sets the line-height to 1.6 * the font-size */
   color: #2a2a28;
 
-  img {
-    max-width: 100%;
-  }
-}
-
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
