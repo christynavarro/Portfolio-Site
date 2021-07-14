@@ -15,6 +15,10 @@ body {
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #2a2a28;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 h1, h2, h3, h4 {
@@ -52,7 +56,6 @@ a {
 }
 
 /* links and buttons */
-
 a,
 a:visited {
   color: #8F9ba0;
