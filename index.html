@@ -7,35 +7,42 @@
   <title>Christina Navarro - UI/UX Designer</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <img src="https://via.placeholder.com/150x50?text=my-cool-logo" alt="Christy Navarro">
-    <nav>
-      <ul>
-        <li><a href="index.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <img class="logo" src="https://via.placeholder.com/150x50?text=my-cool-logo" alt="Christy Navarro">
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
   </header>
   <main>
-    <div id="hero"><!-- Whole section block (orange)-->
-      <div>  <!--Container / wrapper -->
+    <div id="hero">
+      <!-- Whole section block (orange)-->
+      <div class="container">
+        <!--Container / wrapper -->
         <h1>Hi, my name is Christy Navarro. <span>I'm a UI/UX designer based in Miami, FL</span></h1>
         <p>I am experienced in visual design and passionate about creating beautiful solutions for the user.</p>
       </div>
     </div>
-    <div id="work"><!--Whole section block (orange)-->
-      <div><!--Container section-->
+    <div id="work">
+      <!--Whole section block (orange)-->
+      <div class="container">
+        <!--Container section-->
         <!--Work Section-->
         <h2>My Work</h2>
-        <div><!--Row-->
+        <div class="row">
+          <!--Row-->
           <!--Project 1-->
-          <div><!--Left Column Image-->
+          <div>
+            <!--Left Column Image-->
             <picture>
               <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
               <img src="http://via.placeholder.com/1200x800" alt="My Image">
@@ -46,12 +53,14 @@
             <h3>Budgetly</h3><!-- heading for the project -->
             <p>A money saving service designed to help users create a categorized budget to assist with hitting different monetary goals.
             </p>
-            <a href="#">Read more</a><!-- button or link label -->
+            <a href="#" button class="button">Read more</a><!-- button or link label -->
           </div><!-- end second column -->
         </div><!-- end row that holds (2) columns for project -->
-        <div><!--Row-->
+        <div class="row">
+          <!--Row-->
           <!--Project 2-->
-          <div><!--Left Column Image-->
+          <div>
+            <!--Left Column Image-->
             <picture>
               <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
               <img src="http://via.placeholder.com/1200x800" alt="My Image">
@@ -62,12 +71,14 @@
             <h3>Peeps</h3><!-- heading for the project -->
             <p>A location-based iOS and Android native app that allows users to meet people in their area and attend events near them. The app brings users together through shared interests and events.
             </p>
-            <a href="#">Read more</a><!-- button or link label -->
+            <a href="#" button class="button">Read more</a><!-- button or link label -->
           </div><!-- end second column -->
         </div><!-- end row that holds (2) columns for project -->
-        <div><!--Row-->
+        <div class="row">
+          <!--Row-->
           <!--Project 3-->
-          <div><!--Left Column Image-->
+          <div>
+            <!--Left Column Image-->
             <picture>
               <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
               <img src="http://via.placeholder.com/1200x800" alt="My Image">
@@ -78,12 +89,14 @@
             <h3>On the Rocks</h3><!-- heading for the project -->
             <p>A responsive recipe-based web app that allows users to sign up for a monthly cocktail subscription service. On the Rocks brings a variety of your favorite cocktail recipes to your fingertips.
             </p>
-            <a href="#">Read more</a><!-- button or link label -->
+            <a href="ontherocks.html" button class="button">Read more</a><!-- button or link label -->
           </div><!-- end second column -->
         </div><!-- end row that holds (2) columns for project -->
-        <div><!--Row-->
+        <div class="row">
+          <!--Row-->
           <!--Project 4-->
-          <div><!--Left Column Image-->
+          <div>
+            <!--Left Column Image-->
             <picture>
               <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
               <img src="http://via.placeholder.com/1200x800" alt="My Image">
@@ -94,7 +107,7 @@
             <h3>ELUXY</h3><!-- heading for the project -->
             <p>An online luxury consignment store that provides users with a way to buy and sell pre-owned goods.
             </p>
-            <a href="#">Read more</a><!-- button or link label -->
+            <a href="#" button class="button">Read more</a><!-- button or link label -->
           </div><!-- end second column -->
         </div><!-- end row that holds (2) columns for project -->
       </div>
@@ -102,27 +115,24 @@
   </main>
   <!-- For the footer  -->
   <footer id="footer">
-    <div>
+    <div class="container">
       <h2>Get in touch</h2>
       <p>
         If you like my work and want to discuss opportunities Please get in touch.</p>
-      <p><a href="tel:7865435009">Call</a></p>
+      <p><a href="tel:7865435009" button class="button">Call Me</a></p>
       <div>
         <p>Prefer sending an email?
-          <a href="christinamnavarro@gmail.com" class="button contact">Send me an email</a>
+          <a href="christinamnavarro@gmail.com" button class="button">Email Me</a>
         </p>
       </div>
-      <div><!-- SOCIAL LINKS -->
- <a href="LINKEDIN-URL" target="_blank">
-   <img src="http://via.placeholder.com/32x32">
- </a>
- <a href="BEHANCE-URL" target="_blank">
-   <img src="http://via.placeholder.com/32x32">
- </a>
+      <div>
+        <!-- SOCIAL LINKS -->
+          <a class="behance" href="https://www.linkedin.com/in/christinanavarro1210/" target="_blank">
+        </a>
+          <a class="behance" href="https://www.behance.net/christynavarro1" target="_blank">
+        </a>
       </div>
       <p>Copyright Christy Navarro 2021</p>
     </div>
   </footer>
 </body>
-
-</html>

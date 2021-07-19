@@ -5,6 +5,10 @@ Light Gray: #f7f7f7;
 Navy: #2a2a28
 Stone: #dad7cc
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f7f7f7;
   font-family: 'Raleway', sans-serif;
@@ -15,6 +19,7 @@ body {
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #2a2a28;
+}
 
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -40,6 +45,7 @@ h4 {
   font-weight: 400;
 }
 
+/*images*/
 img {
   width: 100%;
 }
@@ -53,7 +59,7 @@ a {
 /* links and buttons */
 a,
 a:visited {
-  color: #8F9ba0;
+  color: #2a2a28;
   text-decoration: none;
 }
 
@@ -61,32 +67,188 @@ a:hover,
 a:focus,
 a:active {
   color: #2a2a28;
-  text-decoration: underline;
-}
-
-.button,
-.button:visited {
-  display: inline-block;
-  background-color: transparent;
-  color: #2a2a28;
-  font-weight: 400;
-  padding: 10px 26px;
-  border-radius: 4px;
-  border: 2px solid #8F9ba0;
-  transition-duration: 0.2s;
-  transition-property: opacity;
-}
-
-.button:hover,
-.button:focus,
-.button:active {
-  display: inline-block;
-  background-color: #f7f7f7;
-  color: #2a2a28;
-  border: 2px solid #2a2a28;
   text-decoration: none;
 }
 
+.button {
+  width: 300px;
+  height: 100px;
+  border: none;
+  color: #2a2a28;
+  padding: 5px;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  font-size: 1rem;
+  text-transform: uppercase;
+  outline: none;
+  border: 3px solid #2a2a28;
+  position: relative;
+  z-index: 1;
+}
+
 .button:hover {
-  opacity: 0.8;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #2a2a28;
+}
+
+.button:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+/*Layout styling*/
+header {
+  position: relative;
+  width: 100%;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 10px 0 0;
+  margin: 2px;
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+}
+
+.container {
+  padding: 0 15px;
+}
+
+#work .row {
+  margin: 25px 15px;
+  /* 25px top and bottom, 15 left and right */
+  padding: 0;
+  bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav>ul>li>a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+nav>ul>li>a:active {
+  color: #2a2a28;
+}
+
+/*main styling (start main section below header)*/
+main {
+  padding-top: 50px;
+}
+
+/*hero styling*/
+#hero {
+  background-color: #f7f7f7;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  text-align: center;
+  padding: 0.67em 0;
+  margin: 0;
+}
+
+#hero h2 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+#hero p {
+  text-align: center;
+}
+
+/* footer styling */
+#footer h2 {
+  text-align: center;
+}
+
+#footer p {
+  text-align: center;
+}
+
+#work h2 {
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.linkedin {
+  width: 50%;
+  float: right;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.behance {
+  width: 50%;
+  float: left;
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* about page styling */
+.about h1 {
+  text-align: center;
+}
+.about h2 {
+  text-align: center;
+}
+#aboutme {
+  text-align: center;
+}
+#hero {
+  text-align: center;
+}
+
+#skills {
+  text-align: center;
+  list-style-type: none;
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+}
+#tools {
+  text-align: center;
+  list-style-type: none;
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+}
+
+/* on the rocks styling */
+#ontherocks h2 {
+  text-align: center;
 }
