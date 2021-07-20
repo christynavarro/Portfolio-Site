@@ -71,8 +71,8 @@ a:active {
 }
 
 .button {
-  width: 300px;
-  height: 100px;
+  display: inline-block;
+  margin-bottom: 15px;
   border: none;
   color: #2a2a28;
   padding: 5px;
@@ -149,6 +149,10 @@ nav>ul {
   margin: 0;
 }
 
+nav>ul>li {
+  display: inline-block;
+}
+
 nav>ul>li>a {
   padding: 0 10px;
   text-transform: uppercase;
@@ -223,23 +227,31 @@ footer p {
 .about h1 {
   text-align: center;
 }
+
 .about h2 {
   text-align: center;
 }
+
 #aboutme {
   text-align: center;
 }
+
 #hero {
   text-align: center;
 }
 
 #skills {
   text-align: center;
-  list-style-type: none;
   padding: 10px;
   display: inline-block;
   width: 100%;
 }
+#skills ul {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
 #tools {
   text-align: center;
   list-style-type: none;
