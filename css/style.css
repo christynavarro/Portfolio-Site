@@ -111,6 +111,8 @@ a:active {
   z-index: -1;
 }
 
+transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+
 /*Layout styling*/
 header {
   position: relative;
@@ -166,7 +168,7 @@ nav>ul>li>a:active {
 
 /*main styling (start main section below header)*/
 main {
-  padding-top: 50px;
+  padding-top: 99px;
 }
 
 /*hero styling*/
@@ -236,6 +238,14 @@ footer p {
   text-align: center;
 }
 
+}
+.abouttitle {
+  text-align: center;
+  padding: px 10;
+  display: inline-block;
+  width: 100%;
+}
+
 #hero {
   text-align: center;
 }
@@ -246,6 +256,7 @@ footer p {
   display: inline-block;
   width: 100%;
 }
+
 #skills ul {
   list-style-type: none;
   margin-left: 0px;
@@ -264,3 +275,120 @@ footer p {
 #ontherocks h2 {
   text-align: center;
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+  }
+
+  .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) {
+    .col-lg-5 {
+      width: 40%;
+    }
+
+    .col-lg-2 {
+      width: 15%;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding-left: 10px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+
+  /* ==============================
+Berlin Illustration Animation Example
+================================= */
+  .berlin-illustration {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @keyframes color-change {
+    from {
+      fill: #edc655;
+    }
+
+    to {
+      fill: #f76414;
+    }
+  }
+
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+
+  @keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+
+    to {
+      transform: translate(200px, 50px);
+    }
+  }
+
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
+    }
+
+    to {
+      transform: translate(100px, 48px);
+    }
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
