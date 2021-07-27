@@ -276,6 +276,12 @@ footer p {
   text-align: center;
 }
 
+#ontherocks ul{
+  text-align: center;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
