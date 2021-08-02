@@ -10,7 +10,7 @@ Stone: #dad7cc
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: #FFFFFF;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -50,24 +50,29 @@ img {
   width: 100%;
 }
 
-a {
-  color: #2a2a28;
-  text-decoration: none;
-  /* No underlining */
-}
-
-/* links and buttons */
-a,
-a:visited {
-  color: #2a2a28;
-  text-decoration: none;
 }
 
 a:hover,
-a:focus,
-a:active {
-  color: #2a2a28;
+a:focus {
+  color: rgb(0, 0, 0);
+}
+
+a:visited {
+  color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
+}
+
+a:active {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+iframe {
+  display: flex;
+  max-width: 250px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .button {
@@ -117,7 +122,7 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
 header {
   position: relative;
   width: 100%;
-  background-color: #f7f7f7;
+  background-color: #FFFFFF;
   text-align: center;
   padding: 10px 0 0;
   margin: 2px;
@@ -173,7 +178,7 @@ main {
 
 /*hero styling*/
 #hero {
-  background-color: #f7f7f7;
+  background-color: #FFFFFF;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -303,7 +308,10 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
+
 
   [class*="col-"] {
     float: left;
@@ -315,6 +323,13 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
+}
+
+.centerme {
+  text-align: center;
+  width: 100%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 /* ==============================
