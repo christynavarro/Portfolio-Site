@@ -11,7 +11,8 @@ body {
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #253547;
+  color: #263547;
+  margin: 0;
 }
 
 h1, h2, h3, h4 {
@@ -68,7 +69,8 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-  color: #D0826F;
+  color: #CB7560;
+  font-weight: bold;
   text-decoration: underline;
 }
 
@@ -87,17 +89,14 @@ a.button {
   position: relative;
   z-index: 1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
 }
 
 a.button:hover {
   color: #F0EFEC;
-  background-color: #d0826f;
+  background-color: #CA725D;
   cursor: pointer;
-  box-sizing: 0 0 20px rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
   text-decoration: none;
 }
@@ -112,7 +111,7 @@ a.button:before {
   bottom: 0;
   opacity: 0;
   content: "";
-  background-color: #d0826f;
+  background-color: #CA725D;
 }
 
 a.button:hover:before {
@@ -145,7 +144,7 @@ a.button:hover:before {
 /*Layout styling*/
 header {
   background-color: #F6F1F0;
-  padding: 0px 0 4px;
+  padding: 10px 15px 0px;
   position: relative;
   width: 100%;
 }
@@ -160,7 +159,6 @@ header {
   padding: 40px;
 }
 
-
 .projects {
   max-width: 530px;
   max-height: 450px;
@@ -172,7 +170,6 @@ header {
 
 .projects:hover {
   cursor: pointer;
-  box-sizing: 0 0 20px rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
 }
 
@@ -245,7 +242,7 @@ main {
 
 #hero h1 {
   color: #D0826F;
-  text-weight: bold;
+  font-weight: bold;
   text-align: center;
   padding: 0.4em 0;
   margin: 0;
@@ -302,9 +299,7 @@ footer {
   display: inline-block;
   padding-left: 1%;
   padding-right: 1%;
-  font-size: 0.889em;
-  font-weight: 300;
-  text-align: center;
+  font-size: 1em;
 }
 
 /* Work Styling */
@@ -321,7 +316,7 @@ footer p {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   color: #D0826F;
-  text-weight: bold;
+  font-weight: bold;
   text-transform: capitalize;
 }
 
@@ -344,7 +339,6 @@ footer p {
 #skills {
   text-align: center;
   padding: 5px;
-  display: inline-block;
 }
 
 #skills ul {
@@ -393,7 +387,6 @@ footer p {
 #tools {
   text-align: center;
   padding: 5px;
-  display: inline-block;
 }
 
 #tools ul {
@@ -469,7 +462,7 @@ Medium devices (640px and larger)
 
   nav>ul>li {
     display: inline-block;
-    padding: 10px 24px 0;
+    padding: 10px 15px 0;
   }
 
   .navtoggle li:not(:last-child) {
@@ -485,7 +478,7 @@ Medium devices (640px and larger)
   }
 
   .navtoggle.responsive li {
-    padding: 10px 24px 0;
+    padding: 10px 15px 0;
     border-top: none;
   }
 
@@ -494,7 +487,7 @@ Medium devices (640px and larger)
   }
 
   .logo {
-    max-width: 400px;
+    max-width: 250px;
   }
 
   #hero span {
@@ -517,109 +510,132 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
+
+  .resume {
+    text-align: center;
+    width: 100%;
+    padding: 40px 20px;
+    clear: both;
+  }
+
+  #work {
+    display: block;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  main {
+    padding-top: 15px;
+  }
+
+  #hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  #hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+  }
+
+  .sameheight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  #pictureme {
+    position: relative;
+  }
+
+  #pictureme picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #pictureme img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #mystory {
+    padding: 10px;
+  }
+
+  #mystory p {
+    text-align: justify;
+    font-size: 1em;
+  }
 }
-
-.resume {
-  text-align: center;
-  width: 100%;
-  padding: 40px 20px;
-  clear: both;
-}
-
-#work {
-  display: block;
-  align-items: center;
-  padding-bottom: 40px;
-  padding-top: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-
-main {
-  padding-top: 15px;
-}
-
-#hero h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5em;
-  font-weight: 500;
-}
-
-#hero h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  font-weight: 300;
-}
-
-#mystory {
-  padding: 10px;
-}
-
-#mystory p {
-  text-align: justify;
-  font-size: 1em;
-}
-
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  @media only screen and (min-width: 1024px) {
-    body {
-      font-size: 1.1em;
-    }
+  body {
+    font-size: 1.1em;
+  }
 
-    .col-lg-5 {
-      width: 40%;
-    }
+  .col-lg-5 {
+    width: 40%;
+  }
 
-    .col-lg-2 {
-      width: 15%;
-    }
+  .col-lg-2 {
+    width: 15%;
+  }
 
-    .col-lg-7 {
-      width: 40%;
-    }
+  .col-lg-7 {
+    width: 40%;
+  }
 
-    .col-md-6 {
-      width: 50%;
-      padding-left: 1%;
-      padding-right: 1%;
-    }
+  .col-md-6 {
+    width: 50%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
 
-    .container {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    [class*="col-"] {
-      float: left;
-      padding-left: 10px;
-    }
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+  }
 
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-    #navbar {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 6%;
-      padding-right: 6%;
-    }
+  #navibar {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
 
-    #work {
-      display: block;
-      align-items: center;
-      padding-bottom: 40px;
-      padding-top: 40px;
-    }
+  #work {
+    display: block;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
   }
 
   #mystory {
@@ -630,53 +646,4 @@ Large devices (1024px or larger)
     text-align: justify;
   }
 
-  /* ==============================
-Berlin Illustration Animation Example
-================================= */
-  .berlin-illustration {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  @keyframes color-change {
-    from {
-      fill: #edc655;
-    }
-
-    to {
-      fill: #f76414;
-    }
-  }
-
-  .sun {
-    animation: 4s color-change infinite alternate linear;
-  }
-
-  @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
-
-    to {
-      transform: translate(200px, 50px);
-    }
-  }
-
-  .cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-  }
-
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-
-    to {
-      transform: translate(100px, 48px);
-    }
-  }
-
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-  }
+}
