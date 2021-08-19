@@ -211,22 +211,21 @@ nav ul li a {
 
 nav ul li ul {
   display: none;
-  position: absolute;
   background-color: #F3F0EC;
   padding: 10px;
   border-radius: 0px 0px 4px 4px;
 }
 
-nav ul li:hover ul {
+nav ul li:hover ul, nav ul li.open ul {
   display: block;
+  position: static;
+  width: 100%
 }
 
 nav ul li ul li {
-  border-bottom: 1px solid #E47068;
-}
-
-nav ul li ul li {
-  width: 180px;
+  display: block;
+  width: 100%;
+  padding: 0;
 }
 
 nav ul li ul li a {
@@ -258,10 +257,6 @@ nav ul li ul li a:hover {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li {
-  display: block;
-  padding: 10px 0;
-}
 
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
@@ -269,6 +264,9 @@ nav ul li ul li a:hover {
 
 .navtoggle.responsive li {
   display: block;
+  width: 100%;
+  border-bottom: 0;
+  padding: 0;
 }
 
 /*main styling (start main section below header)*/
@@ -572,6 +570,10 @@ Medium devices (640px and larger)
     display: none;
   }
 
+  .navtoggle li li:last-child {
+    display: block;
+  }
+
   .navtoggle.responsive nav {
     padding: 0;
   }
@@ -579,6 +581,10 @@ Medium devices (640px and larger)
   .navtoggle.responsive li {
     padding: 10px 15px 0;
     border-top: none;
+  }
+
+  nav ul li ul li {
+    border-bottom: 1px solid #E47068;
   }
 
   .navtoggle.responsive li:last-child {
@@ -630,7 +636,6 @@ Medium devices (640px and larger)
     padding-left: 10px;
     padding-right: 10px;
   }
-
 
   #hero h1 {
     font-family: 'Gotu', sans-serif;
@@ -735,7 +740,7 @@ Large devices (1024px or larger)
 
   nav {
     padding-top: 15px;
-  float: right;
+    float: right;
     text-transform: uppercase;
     background-color: #F3F0EC;
     color: #000000;
