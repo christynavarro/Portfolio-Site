@@ -777,15 +777,14 @@ Large devices (1024px or larger)
 
   nav ul li:hover ul {
     display: block;
+    position: static;
+    width: 100%;
   }
 
   nav ul li ul li {
     border-bottom: 1px solid #E47068;
   }
 
-  nav ul li ul li {
-    width: 180px;
-  }
 
   nav ul li ul li a {
     padding: 12px 14px;
