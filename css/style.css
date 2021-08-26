@@ -216,7 +216,7 @@ nav ul li ul {
   border-radius: 0px 0px 4px 4px;
 }
 
-nav ul li:hover ul, nav ul li.open ul {
+nav ul li.open ul {
   display: block;
   position: static;
   width: 100%
@@ -562,6 +562,7 @@ Medium devices (640px and larger)
     padding: 10px 15px 0;
   }
 
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -581,6 +582,20 @@ Medium devices (640px and larger)
   .navtoggle.responsive li {
     padding: 10px 15px 0;
     border-top: none;
+  }
+
+  nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    width: 250px;
+  }
+
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #F3F0EC;
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
   }
 
   nav ul li ul li {
@@ -775,11 +790,6 @@ Large devices (1024px or larger)
     border-radius: 0px 0px 4px 4px;
   }
 
-  nav ul li:hover ul {
-    display: block;
-    position: static;
-    width: 100%;
-  }
 
   nav ul li ul li {
     border-bottom: 1px solid #E47068;
